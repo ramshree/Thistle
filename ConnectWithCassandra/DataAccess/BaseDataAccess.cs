@@ -59,7 +59,7 @@ namespace ConnectWithCassandra
 
             return Cluster.Builder()
                     .WithCredentials("app", "Password1")
-                    .AddContactPoints(System.Net.IPAddress.Parse("10.227.154.242"))
+                    .AddContactPoints(System.Net.IPAddress.Parse("127.0.0.1"))
                     .WithQueryOptions(queryOptions)
                     .Build();
             // Connect to the nodes using a keyspace
